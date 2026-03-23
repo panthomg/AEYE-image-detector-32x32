@@ -73,5 +73,10 @@ Epoch 5 finished. Loss: 0.0572
 
 ## 👤 About Me
 I am a 17-year-old developer interested in Machine Learning and Computer Vision. This is my first time training a model on my own hardware by myself. This project was built to explore how hardware acceleration (CUDA) can be used to solve modern digital authentication challenges.
+<img width="700" height="394" alt="Screenshot 2026-03-23 144255" src="https://github.com/user-attachments/assets/4da1eeec-7ac9-45d5-baa8-7d7048eb1aa4" />
+<img width="700" height="394" alt="Screenshot 2026-03-23 144313" src="https://github.com/user-attachments/assets/3e91c45a-62e5-48b8-bf99-c7cb168027ff" />
+<img width="700" height="394" alt="Screenshot 2026-03-23 150224" src="https://github.com/user-attachments/assets/1a6fa622-44f0-4e5f-88e9-c5597938a376" />
+<img width="700" height="394" alt="Screenshot 2026-03-23 150230" src="https://github.com/user-attachments/assets/c9a25203-2f80-42fd-88ba-31cd78309e2e" />
+<img width="700" height="394" alt="Screenshot 2026-03-23 151650" src="https://github.com/user-attachments/assets/e285ff3b-407d-46c1-9d24-d0f5a3377f87" />
 
 ---
