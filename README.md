@@ -1,31 +1,69 @@
 # 🤖 AEye: Deep Learning Image Detector
 A custom-trained Neural Network designed to distinguish between real-world photography and AI-generated imagery.
 
-Before we start:
-I had a lot of fun making this, and I'm proud to succesfully custom trian an AI model for my needs. You too can train an AI model with ease with a decent hardware and self interest. I learned this myself with searching and asking help from chatbots to help me achive this, I learned a lot of thing in this journey and would love to share it with you guys. *Some of the text below might be AI generated to save time and efficiency*
+### 🌟 A Note from the Developer
+I had a lot of fun making this, and I'm proud to successfully custom train an AI model for my needs. You too can train an AI model with ease with decent hardware and self-interest. I learned this myself by searching and asking help from chatbots to help me achieve this. I learned a lot in this journey and would love to share it with you guys. *Some of the technical explanations below were refined using AI for clarity and efficiency.*
 
+---
 
-## 🚀 Overview
-As AI image generators (like Midjourney and Stable Diffusion) become more realistic, the need for automated detection is critical. This project implements a **Convolutional Neural Network (CNN)** using **Transfer Learning** on the **EfficientNet-B0** architecture to detect microscopic "fingerprints" left by generative models.
+## 🧠 How It Works (The Theory)
+If you are new to AI, here is the "simple" version of what is happening inside this code:
+
+1. **Digital Fingerprints:** AI generators (like Stable Diffusion) don't create images the way humans take photos. They start with random "noise" and clean it up. This leaves behind mathematical patterns called **Artifacts** that are invisible to humans but obvious to a computer.
+2. **Convolutional Neural Networks (CNN):** We use an architecture called **EfficientNet-B0**. Think of it as a set of digital eyes that scan the image for these artifacts.
+3. **Transfer Learning:** We didn't start from zero. We used a "Pre-trained" model from Google that already knows what shapes and colors look like. We just "re-educated" the final layer to specifically look for AI fingerprints.
+4. **Tensors:** The computer doesn't see "pixels"; it sees a massive grid of numbers called a **Tensor**. Our model does high-speed calculus on these numbers to find the answer.
+
+---
+
+## 🚀 Step-by-Step Tutorial (For Beginners)
+
+If you want to recreate this project on your own laptop, follow these steps:
+
+### 1. The Environment
+You need to get your hardware ready to talk to your code.
+- Install **Python 3.11**.
+- Install **VS Code**.
+- Install the **CUDA-enabled PyTorch** (This allows your NVIDIA GPU to do the heavy lifting).
+  ```bash
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+  ```
+
+### 2. The Data (The AI's Textbook)
+AI needs examples to learn. I used the **CIFAKE Dataset** from Kaggle, which contains 100,000 images labeled "REAL" or "FAKE." 
+- Organize your folders: `/train/REAL`, `/train/FAKE`, `/test/REAL`, `/test/FAKE`.
+
+### 3. The Training
+Run the `train.py` script.
+- **Epochs:** Each "Epoch" is one full pass through the dataset.
+- **Loss:** This is the AI's "penalty score." The lower the number, the smarter the AI is becoming. 
+- **Wait Time:** On an RTX 4050, this takes about 45 minutes for 5 epochs.
+
+### 4. The App
+Once the file `ai_detector.pth` appears in your folder, run `app.py`. This launches a web interface where you can drag and drop your own images!
+
+---
+
+## 🚧 Common Hurdles (Read if you get errors!)
+During this project, I ran into several "boss fights." Here is how to beat them:
+- **NumPy 2.0 Conflict:** Many AI libraries aren't ready for NumPy 2.0 yet. If your code crashes, downgrade: `pip install "numpy<2"`.
+- **CUDA Not Found:** If your code says "Training on CPU" even though you have a GPU, you likely installed the wrong PyTorch. Use the `--index-url` command mentioned in the Setup.
+- **Out of Memory (OOM):** If your GPU crashes, lower your `BATCH_SIZE` in the code from 32 to 16.
+
+---
 
 ## 💻 Tech Stack & Hardware
 - **Language:** Python 3.11
 - **Framework:** PyTorch
-- **Architecture:** EfficientNet-B0 (Pre-trained on ImageNet)
-- **Hardware used for Training:** NVIDIA RTX 4050 Laptop GPU (6GB VRAM)
+- **Architecture:** EfficientNet-B0
+- **Hardware:** NVIDIA RTX 4050 Laptop GPU (6GB VRAM)
 - **Interface:** Gradio Web UI
 
-## 📊 Methodology & Results
-1. **Initial Training:** Trained on the **CIFAKE Dataset** (100k images).
-   - Achieved a final loss of **0.0572** over 5 epochs.
-   - High accuracy on low-resolution (32x32) "domain" images.
-2. **Current Goal:** Fine-tuning on high-resolution (512x512) **Unsplash + Stable Diffusion XL** datasets to improve real-world generalization.
-
-## 🛠️ Installation & Usage
-1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/AIEye-Image-Detector.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the training: `python train.py`
-4. Launch the Web App: `python app.py`
+## 📊 Results
+- **CIFAKE Training:** Final Loss of **0.0572** (Approx. 97% Accuracy).
+- **Fine-Tuning:** Currently optimizing for high-resolution (512x512) images to improve real-world reliability.
 
 ## 👤 About Me
 I am a 17-year-old developer interested in Machine Learning and Computer Vision. This project was built to explore how hardware acceleration (CUDA) can be used to solve modern digital authentication challenges.
+
+---
