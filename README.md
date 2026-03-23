@@ -56,7 +56,7 @@ During this project, I ran into several "boss fights." Here is how to beat them:
 - **Language:** Python 3.11
 - **Framework:** PyTorch
 - **Architecture:** EfficientNet-B0
-- **Hardware:** NVIDIA RTX 4050 Laptop GPU (6GB VRAM)
+- **Hardware:** NVIDIA RTX 4050 Laptop GPU (6GB VRAM) *This is the hardware I trained the model in, took about 40 mins to complete training*
 - **Interface:** Gradio Web UI
 
 ## 📊 Results
@@ -64,6 +64,6 @@ During this project, I ran into several "boss fights." Here is how to beat them:
 - **Fine-Tuning:** Currently optimizing for high-resolution (512x512) images to improve real-world reliability.
 
 ## 👤 About Me
-I am a 17-year-old developer interested in Machine Learning and Computer Vision. This project was built to explore how hardware acceleration (CUDA) can be used to solve modern digital authentication challenges.
+I am a 17-year-old developer interested in Machine Learning and Computer Vision. This is my first time training a model on my own hardware by myself. This project was built to explore how hardware acceleration (CUDA) can be used to solve modern digital authentication challenges.
 
 ---
