@@ -62,7 +62,7 @@ During this project, I ran into several "boss fights." Here is how to beat them:
 
 ## 📊 Results
 - **CIFAKE Training:** Final Loss of **0.0572** (Approx. 97% Accuracy). 
-'''Training started on cuda...
+'''bash Training started on cuda...
 Epoch 1 finished. Loss: 0.1496
 Epoch 2 finished. Loss: 0.0997
 Epoch 3 finished. Loss: 0.0798
