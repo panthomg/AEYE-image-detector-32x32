@@ -61,8 +61,13 @@ During this project, I ran into several "boss fights." Here is how to beat them:
 - **Interface:** Gradio Web UI
 
 ## 📊 Results
-- **CIFAKE Training:** Final Loss of **0.0572** (Approx. 97% Accuracy).
-- **Fine-Tuning:** Currently optimizing for high-resolution (512x512) images to improve real-world reliability.
+- **CIFAKE Training:** Final Loss of **0.0572** (Approx. 97% Accuracy). 
+'''Training started on cuda...
+Epoch 1 finished. Loss: 0.1496
+Epoch 2 finished. Loss: 0.0997
+Epoch 3 finished. Loss: 0.0798
+Epoch 4 finished. Loss: 0.0655
+Epoch 5 finished. Loss: 0.0572'''
 
 ## 👤 About Me
 I am a 17-year-old developer interested in Machine Learning and Computer Vision. This is my first time training a model on my own hardware by myself. This project was built to explore how hardware acceleration (CUDA) can be used to solve modern digital authentication challenges.
