@@ -1,0 +1,13 @@
+# Ignore the massive dataset
+/cifake_data/
+/new_dataset/
+*.zip
+*.rar
+
+# Ignore Python's temporary files
+__pycache__/
+.venv/
+.vscode/
+
+# Ignore the heavy model weights (Optional - you can upload if <100MB)
+# *.pth
