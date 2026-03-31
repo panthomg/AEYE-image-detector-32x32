@@ -41,7 +41,7 @@ You need to get your hardware ready to talk to your code.
 ### 2. The Data (The AI's Textbook)
 AI needs examples to learn. I used the **CIFAKE Dataset** from Kaggle, which contains 100,000 images labeled "REAL" or "FAKE." 
 - Organize your folders: `/train/REAL`, `/train/FAKE`, `/test/REAL`, `/test/FAKE`.
-
+`https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images`
 ### 3. The Training
 Run the `train.py` script.
 - **Epochs:** Each "Epoch" is one full pass through the dataset.
