@@ -3,7 +3,6 @@ A custom-trained Neural Network designed to distinguish between real-world photo
 
 ### 🌟 A Note from the Developer
 I had a lot of fun making this, and I'm proud to successfully custom train an AI model for my needs. You too can train an AI model with ease with decent hardware and self-interest. I learned this myself by searching and asking help from chatbots to help me achieve this. I learned a lot in this journey and would love to share it with you guys. *Some of the technical explanations below were refined using AI for clarity and efficiency.*
-### To Learn how things work in-depth
  To Learn how things work in-depth, what I learned, thought of and was curious about. Go to Repo's Wiki for more learnings!
 ---
 
