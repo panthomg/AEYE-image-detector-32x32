@@ -20,6 +20,14 @@ If you are new to AI, here is the "simple" version of what is happening inside t
 ## 🚀 Step-by-Step Tutorial (For Beginners)
 
 If you want to recreate this project on your own laptop, follow these steps:
+## 📥 Quick Start
+
+Clone the repository and move into the project folder:
+
+```bash
+git clone https://github.com/panthomg/AEYE-image-detector-32x32.git
+cd AEYE-image-detector-32x32
+```
 
 ### 1. The Environment
 You need to get your hardware ready to talk to your code.
